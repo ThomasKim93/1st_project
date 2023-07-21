@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/our_world.css">
+    <link rel="stylesheet" href="./css/our_world.css">
+    <link href="javascript/animate.css" rel="stylesheet">
+    <link href="javascript/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./javascript/jquery.fittext.js"></script>
+    <script src="./javascript/jquery.lettering.js"></script>
+    <script src="./javascript/jquery.textillate.js"></script>
+    <script defer src="./javascript/common.js"></script>
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body style="overflow-x: hidden;">
+    <header id="header">
         <div class="h-1"> 
             <a href="#"><img src="./images/Main_imgs/D-logo_real.png" alt="로고"></a>
             <nav>
-                <a href="#">About DLC</a>
-                <a href="#">Our Worlds</a>
-                <a href="#">Experiencess</a>
-                <a href="#">Gallery</a>
-                <a href="#">Press</a>
+                <a href="./about DLC.html">About DLC</a>
+                <a href="./our_world.html">Our Worlds</a>
+                <a href="./experience.html">Experiencess</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./press.html">Press</a>
                 <div class="menu">
-                    <a href="#"> 
+                    <a class="menu-1" href="#"> 
                         <span></span>
                         <span></span>
                         <span></span>
@@ -26,107 +35,135 @@
                 </div>
             </nav>
         </div>
+
+        <div class="h-2 font-cg">
+
+            <a href="#">Magazine</a>
+            <a href="#">Company</a>
+            <a href="#">Foundation</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact</a>
+        </div>
+
     </header>
 
 
     <main>
         <article class="g-1">
             <ul>
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
-
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
-
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
-
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
-
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
                 
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
+                <li >
+                    <a class="g-1-1" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
                 </li>
+                <li>
+                    <a class="g-1-2" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-3" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-4" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-5" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-6" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-7" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-8" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-9" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-10" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-11" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+                <li>
+                    <a class="g-1-12" href="">
+                        <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
+                        <figcaption>
+                            <b>THE HILLS GOLF CLUB</b>
+                            <p>The Hamptons, New York</p>
+                        </figcaption>
+                    </a>
+                </li>
+
                 
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
 
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
-
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
-
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
-
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
                 
-                <li>
-                    <figure><img src="./images/gallery_imgs/Barefoot-golf-at-Gozzer-4_d169f13de117664acdaa1543841b7c16.jpg" alt=""></figure>
-                    <figcaption>
-                        <b>THE HILLS GOLF CLUB</b>
-                        <p>The Hamptons, New York</p>
-                    </figcaption>
-                </li>
 
             </ul>
 

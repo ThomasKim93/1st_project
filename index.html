@@ -4,22 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="javascript/animate.css" rel="stylesheet">
+    <link href="javascript/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./javascript/jquery.fittext.js"></script>
+    <script src="./javascript/jquery.lettering.js"></script>
+    <script src="./javascript/jquery.textillate.js"></script>
+    <script defer src="./javascript/common.js"></script>
+    <script defer src="./javascript/index.js"></script>
     <title>Document</title>
 </head>
 <body style="overflow-x: hidden;">
     
-    <header>
+    <header id="header">
         <div class="h-1"> 
-            <a href="#"><img src="./images/Main_imgs/D-logo.png" alt="로고"></a>
+            <a href="#"><img src="./images/Main_imgs/D-logo_real.png" alt="로고"></a>
             <nav>
-                <a href="#">About DLC</a>
-                <a href="#">Our Worlds</a>
-                <a href="#">Experiencess</a>
-                <a href="#">Gallery</a>
-                <a href="#">Press</a>
+                <a href="./about DLC.html">About DLC</a>
+                <a href="./our_world.html">Our Worlds</a>
+                <a href="./experience.html">Experiencess</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./press.html">Press</a>
                 <div class="menu">
-                    <a href="#"> 
+                    <a class="menu-1" href="#"> 
                         <span></span>
                         <span></span>
                         <span></span>
@@ -27,14 +38,24 @@
                 </div>
             </nav>
         </div>
+
+        <div class="h-2 font-cg">
+
+            <a class="txt-ani" href="#">Magazine</a>
+            <a class="txt-ani" href="#">Company</a>
+            <a class="txt-ani" href="#">Foundation</a>
+            <a class="txt-ani" href="#">Careers</a>
+            <a class="txt-ani" href="#">Contact</a>
+        </div>
+
     </header>
 
     <main>
         <section class="m-1"> 
             <div class ="m-1-1">
                 <div class="m-2 font-cg">
-                    <b>Discover</b>
-                    <p>your world</p>
+                    <b class="txt-ani">Discover</b>
+                    <p class="txt-ani">your world</p>
                 </div>
 
                 <nav>
@@ -44,7 +65,10 @@
                     </div>
                     <div class="m-c-1">
                         <div class="m-c-2">
-                            <a href="#"></a>
+                            <div>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </div>
                         </div>
                     </div>
 
@@ -63,14 +87,15 @@
             <div class="s-2">
                 <div class="s-3">
                     <div class="s-4">
-                        <b>Welcome to<br> Our world</b>
-                        <p>Discover the unique atmosphere of our private</p>
-                        <p>residentail club communities. Once experienced. Never</p>
-                        <p>forgotten. This is classic, comfortable, modern living in</p>
-                        <p>nature's most spectacular settings worldwide.</p>
-                        <p>Reassuringly exclusive. Generously welcoming. Find<</p>
-                        <p>your unique world - a place where families love to be:</p>
-                        <p>creating unforgettable moments, together</p>
+                        <b class="txt-ani">Welcome to</b><br>
+                        <b class="txt-ani"> Our world</b>
+                        <p class="txt-ani">Discover the unique atmosphere of our private</p>
+                        <p class="txt-ani">residentail club communities. Once experienced. Never</p>
+                        <p class="txt-ani">forgotten. This is classic, comfortable, modern living in</p>
+                        <p class="txt-ani">nature's most spectacular settings worldwide.</p>
+                        <p class="txt-ani">Reassuringly exclusive. Generously welcoming. Find</p>
+                        <p class="txt-ani">your unique world - a place where families love to be:</p>
+                        <p class="txt-ani">creating unforgettable moments, together</p>
                         
                     </div>
 
@@ -85,24 +110,24 @@
 
                 <div class="ss-3">
                     <div class="ss-4"><!-- flex -->
-                        <b>The Discover Land</b>
+                        <b class="txt-ani">The Discover Land</b>
                         
                     </div> 
                 
 
                     <div class="ss-5">
-                        <input id="d" type="radio" name="slide">
-                        <input id="e" type="radio" name="slide">
+                        <input data-name="prev" id="d" type="radio" name="slide" class="swiper-button-prev">
+                        <input data-name="next" id="e" type="radio" name="slide" class="swiper-button-next">
 
                         <label for="d"><span></span></label>
                         <label for="e"><span></span></label>    
                     </div>
                 </div>
                 
-                <div class="ss-6">
-                    <figure>
-                        <a href="#">
-                            <section>
+                <div class="ss-6 swiper mySwiper">
+                    <figure class="swiper-wrapper">
+                        <a href="#" class="swiper-slide">
+                            <section >
                                 <div class="ss-7">
                                     <figure>
                                         <img src="./images/Main_imgs/driftwood3-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg" alt="">
@@ -116,7 +141,7 @@
                             </section>
                         </a>
                         
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -131,7 +156,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -146,7 +171,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -161,7 +186,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -176,7 +201,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -191,7 +216,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -206,7 +231,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -221,7 +246,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -236,7 +261,7 @@
                             </section>
                         </a>   
 
-                        <a href="#">
+                        <a href="#" class="swiper-slide">
                             <section>
                                 <div class="ss-7">
                                     <figure>
@@ -261,10 +286,10 @@
                 
                 <div class="sss-3"><!-- flex -->
                     <div class="sss-3-1"><!--글자 타이틀 -->
-                        <h1>Lands of</h1>
-                        <h1>Discovery</h1>
-                        <p>A world away from the day-today. Your excape. Your haven. Your world.</p>
-                        <p>Explore the map below and take a journey to our communiites.</p>  
+                        <h1 class="txt-ani">Lands of</h1>
+                        <h1 class="txt-ani">Discovery</h1>
+                        <p class="txt-ani">A world away from the day-today. Your excape. Your haven. Your world.</p>
+                        <p class="txt-ani">Explore the map below and take a journey to our communiites.</p>  
                         
                     </div><!-- sss-3-1 -->
                     <span></span>
@@ -278,30 +303,82 @@
                                     <div class="sss-5"><!-- 화살표 -->
                                         <button class="btn-1"></button>
                                         <button class="btn-2"></button>
+                                        <!-- <input id ="d" class="btn-1" type="radio" name="slide">
+                                        <input id ="e" class="btn-2" type="radio" name="slide">
+
+                                        <label for="d"></label>
+                                        <label for="e"></label> -->
+
+                                        
                                     </div><!-- sss-5 -->
 
-                                    <div class="sss-6"><!-- 버튼 클릭시 변화 -->
-                                        <div class="sss-7"><!-- 날씨 아이콘 -->
-                                            <span><p>72F</p> </span>                    
-                                            <span><p>2mph</p> </span>                     
-                                            <span><p>166</p> </span>                     
-                                        </div><!-- sss-7 -->
-                                        
-                                        <div class="sss-8"><!-- 글자 설명 -->
-                                            <p>Rio San Juan, dominican</p>
-                                            <h1>Playa Grande</h1>
-                                        </div><!-- sss-8 -->
-                                        
-                                        <div class="sss-9">
-                                            <span></span>
-                                            <p>56.589999N/-3.979470W</p>
-                                        </div><!-- sss-9 -->
-                                    </div><!-- sss-6 -->
+                                    <div class="earth-info">
+                                        <div class="sss-6"><!-- 버튼 클릭시 변화 -->
+                                            <div class="sss-6-1">
+                                                <div class="sss-7"><!-- 날씨 아이콘 -->
+                                                    <span><p>72F</p> </span>                    
+                                                    <span><p>2mph</p> </span>                     
+                                                    <span><p>166</p> </span>                     
+                                                </div><!-- sss-7 -->
+                                                
+                                                <div class="sss-8"><!-- 글자 설명 -->
+                                                    <p>Rio San Juan, dominican</p>
+                                                    <h1>Playa Grande</h1>
+                                                </div><!-- sss-8 -->
+                                                
+                                                <div class="sss-9">
+                                                    <span></span>
+                                                    <p>56.589999N/-3.979470W</p>
+                                                </div><!-- sss-9 -->
+                                            </div>
+                                            <article class="earth-pic"><img src="./images/Main_imgs/amazing-pool-2_fc98236fcd7afd38ca0fd181cf61bcb6.jpg"></article>
+                                        </div><!-- sss-6 -->
+                                        <div class="sss-6"><!-- 버튼 클릭시 변화 -->
+                                            <div class="sss-6-1">
+                                                <div class="sss-7"><!-- 날씨 아이콘 -->
+                                                    <span><p>72F</p> </span>                    
+                                                    <span><p>2mph</p> </span>                     
+                                                    <span><p>166</p> </span>                     
+                                                </div><!-- sss-7 -->
+                                                
+                                                <div class="sss-8"><!-- 글자 설명 -->
+                                                    <p>Rio San Juan, dominican</p>
+                                                    <h1>Playa Grande</h1>
+                                                </div><!-- sss-8 -->
+                                                
+                                                <div class="sss-9">
+                                                    <span></span>
+                                                    <p>56.589999N/-3.979470W</p>
+                                                </div><!-- sss-9 -->
+                                                <article class="earth-pic"><img src="./images/Main_imgs/amazing-pool-2_fc98236fcd7afd38ca0fd181cf61bcb6.jpg"></article>
+                                            </div>
+                                        </div>
+                                        <div class="sss-6"><!-- 버튼 클릭시 변화 -->
+                                            <div class="sss-6-1">
+                                                <div class="sss-7"><!-- 날씨 아이콘 -->
+                                                    <span><p>72F</p> </span>                    
+                                                    <span><p>2mph</p> </span>                     
+                                                    <span><p>166</p> </span>                     
+                                                </div><!-- sss-7 -->
+                                                
+                                                <div class="sss-8"><!-- 글자 설명 -->
+                                                    <p>Rio San Juan, dominican</p>
+                                                    <h1>Playa Grande</h1>
+                                                </div><!-- sss-8 -->
+                                                
+                                                <div class="sss-9">
+                                                    <span></span>
+                                                    <p>56.589999N/-3.979470W</p>
+                                                </div><!-- sss-9 -->
+                                                <article class="earth-pic"><img src="./images/Main_imgs/amazing-pool-2_fc98236fcd7afd38ca0fd181cf61bcb6.jpg"></article>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div><!-- sss-4-2 -->
                             
-                        <article><img src="./images/Main_imgs/amazing-pool-2_fc98236fcd7afd38ca0fd181cf61bcb6.jpg"></article>
+                        
                        
                     </div><!-- sss-4-1 -->    
                 </div><!-- sss-4 -->
@@ -326,45 +403,110 @@
         </section>
 
         <section class="s4-1">
+
+            <figure class="s401">
+                <div class="video1">
+                    <video width="100%" height="100%" muted loop>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <figcaption>
+                    <h1 class="txt-ani">Experiences</h1>
+                    <p class="txt-ani">Experience the ultimate round of golf on championship</p>
+                    <p class="txt-ani">courses designed by the world's most highly acclaimed</p>
+                    <p class="txt-ani">architects or take a thrilling adventure with limitless</p>
+                    <p class="txt-ani">activities for everyone to enjoy</p>
+                    <button>Explore</button>
+                </figcaption>
+            </figure>
+
+            <figure class="s401">
+                <div class="video1">
+                    <video width="100%" height="100%" muted loop>
+                        <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <figcaption>
+                    <h1 class="txt-ani">Experiences</h1>
+                    <p class="txt-ani">Experience the ultimate round of golf on championship</p>
+                    <p class="txt-ani">courses designed by the world's most highly acclaimed</p>
+                    <p class="txt-ani">architects or take a thrilling adventure with limitless</p>
+                    <p class="txt-ani">activities for everyone to enjoy</p>
+                    <button>Explore</button>
+                </figcaption>
+            </figure>
+
+            <figure class="s401">
+                <div class="video1">
+                    <video width="100%" height="100%"
+                        muted  loop>
+                    <source src="" type="video/mp4">
+                    </video>
+                </div>
+                <figcaption>
+                    <h1 class="txt-ani">Experiences</h1>
+                    <p class="txt-ani">Experience the ultimate round of golf on championship</p>
+                    <p class="txt-ani">courses designed by the world's most highly acclaimed</p>
+                    <p class="txt-ani">architects or take a thrilling adventure with limitless</p>
+                    <p class="txt-ani">activities for everyone to enjoy</p>
+                    <button>Explore</button>
+                </figcaption>
+            </figure> 
+
+            
+
             <div class="s4-2"><!-- 전체 flex -->
                 
-                <div class="s4-3">
+                <div class="s4-3 video">
                     <div class="s4-3-1">
-                        <figure><img src="./images/Main_imgs/Yellowstone-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg"></figure>
+                        <figure class="s4click"><img src="./images/Main_imgs/Yellowstone-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg"></figure>
                         <div class="s4-4">
                             <p>Experiences</p>
                             <div class="s4-5"><!-- 원 -->
-                                <span></span>
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="s4-3">
+                <div class="s4-3 video">
                     <div class="s4-3-1">
-                        <figure><img src="./images/Main_imgs/Vaquero-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg"></figure>
+                        <figure class="s4click"><img src="./images/Main_imgs/Vaquero-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg"></figure>
                         <div class="s4-4">
                             <p>Lifestyle</p>
                             <div class="s4-5"><!-- 원 -->
-                                <span></span>
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="s4-3">
+                <div class="s4-3 video">
                     <div class="s4-3-1">
-                        <figure><img src="./images/Main_imgs/wellness_slider_190716_095551_90f8ce634cc6ad7a15d605007f03ee5c.jpg"></figure>
+                        <figure class="s4click"><img src="./images/Main_imgs/wellness_slider_190716_095551_90f8ce634cc6ad7a15d605007f03ee5c.jpg"></figure>
                         <div class="s4-4">
                             <p>Wellness</p>
                             <div class="s4-5"><!-- 원 -->
-                                <span></span>
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
             </div>
+
+
+           
+
         </section>
 
     </main>
@@ -413,6 +555,16 @@
 
 
     </footer>
+    
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+

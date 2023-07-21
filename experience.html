@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/experience.css">
+    <link rel="stylesheet" href="./css/experience.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="javascript/animate.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./javascript/jquery.fittext.js"></script>
+    <script src="./javascript/jquery.lettering.js"></script>
+    <script src="./javascript/jquery.textillate.js"></script>
+    <script defer src="./javascript/common.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header style="overflow-x: hidden;">
         <div class="h-1"> 
             <a href="#"><img src="./images/Main_imgs/D-logo.png" alt="로고"></a>
             <nav>
-                <a href="#">About DLC</a>
-                <a href="#">Our Worlds</a>
-                <a href="#">Experiencess</a>
-                <a href="#">Gallery</a>
-                <a href="#">Press</a>
+                <a href="./about DLC.html">About DLC</a>
+                <a href="./our_world.html">Our Worlds</a>
+                <a href="./experience.html">Experiencess</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./press.html">Press</a>
                 <div class="menu">
-                    <a href="#"> 
+                    <a class="menu-1" href="#"> 
                         <span></span>
                         <span></span>
                         <span></span>
@@ -26,14 +35,24 @@
                 </div>
             </nav>
         </div>
+
+        <div class="h-2 font-cg">
+
+            <a class="txt-ani" href="#">Magazine</a>
+            <a class="txt-ani" href="#">Company</a>
+            <a class="txt-ani" href="#">Foundation</a>
+            <a class="txt-ani" href="#">Careers</a>
+            <a class="txt-ani" href="#">Contact</a>
+        </div>
+
     </header>
 
     <main>
         <section class="m-1"> 
             <div class ="m-1-1">
-                <div class="m-2">
-                    <b>Discover</b>
-                    <p>your world</p>
+                <div class="m-2 font-cg">
+                    <b class="txt-ani">Discover</b>
+                    <p class="txt-ani">your world</p>
                 </div>
 
                 <nav>
@@ -60,28 +79,25 @@
 
         <section class="s-1">
             <div class="s-2">
-                <div class="s-2-1">
-                    <p>
-                        Memorable days. Exceptional nights. We believe it's our mission to<br>
-                        Make every minute matter. So you can live your life to the fullest,<br>
-                        with the people closeset to you<br>
-                    </p>
+                <div class="s-2-1 font-cg">
+                    <p class="txt-ani">Memorable days. Exceptional nights. We believe it's our mission to</p>
+                    <p class="txt-ani">Make every minute matter. So you can live your life to the fullest,</p>
+                    <p class="txt-ani">with the people closeset to you</p>
                 </div>
 
                 <div class="s-3">
                     <div class="s-4">
-                        <b>Exclusive to<br>
-                             your world</b>
-                        <p>Our worlds are designed to offer you endless<br>
-                            opportunities to share incredible once-in-a-lifetime<br>
-                            experiences and adventures every single minute of the<br>
-                            day. each of our settings offer a relaxed sense of<br>
-                            community through exceptional clubhouses,<br>
-                            world-class golf courses, welcoming staff, and an<br>
-                            extensive Outdoor Pursuits program, Create moments<br>
-                            of joy and wonder, unforgettable memories, and<br>
-                            cherished times together with those who matter most<br>
-                        </p>
+                        <b class="txt-ani">Exclusive to</b>
+                        <b class="txt-ani">your world</b>
+                        <p class="txt-ani">Our worlds are designed to offer you endless</p>
+                        <p class="txt-ani">opportunities to share incredible once-in-a-lifetime</p>
+                        <p class="txt-ani">experiences and adventures every single minute of the</p>
+                        <p class="txt-ani">day. each of our settings offer a relaxed sense of</p>
+                        <p class="txt-ani">community through exceptional clubhouses,</p>
+                        <p class="txt-ani">world-class golf courses, welcoming staff, and an</p>
+                        <p class="txt-ani">extensive Outdoor Pursuits program, Create moments</p>
+                        <p class="txt-ani">of joy and wonder, unforgettable memories, and</p>
+                        <p class="txt-ani">cherished times together with those who matter most</p>
                     </div>
                     <figure><img src="./images/experience_imgs/private-marina-in-lake-tahoe-3_5ae402c9837860cd6e4f65e304b3a5fa.jpg" alt=""></figure>
                 </div>
@@ -100,13 +116,12 @@
 
                 <div class="d-6">
                     <h1>Golf</h1>
-                    <p>
-                        we Commission the word's most renowned course<br>
-                        architects to design spectacular golf experiences on<br>
-                        challenging yet incredibly playable 18-hole courses. Our<br>
-                        trademark comfort stations also set new standards in<br>
-                        on-course amenities.<br>
-                    </p>
+                    
+                    <p>We Commission the word's most renowned course</p>
+                    <p>architects to design spectacular golf experiences on</p>
+                    <p>challenging yet incredibly playable 18-hole courses. Our</p>
+                    <p>trademark comfort stations also set new standards in</p>
+                    <p>on-course amenities.</p>
 
                     <span>Explore</span>
                 </div>
@@ -125,13 +140,12 @@
 
                 <div class="dd-6">
                     <h1>Golf</h1>
-                    <p>
-                        we Commission the word's most renowned course<br>
-                        architects to design spectacular golf experiences on<br>
-                        challenging yet incredibly playable 18-hole courses. Our<br>
-                        trademark comfort stations also set new standards in<br>
-                        on-course amenities.<br>
-                    </p>
+
+                    <p>We Commission the word's most renowned course</p>
+                    <p>architects to design spectacular golf experiences on</p>
+                    <p>challenging yet incredibly playable 18-hole courses. Our</p>
+                    <p>trademark comfort stations also set new standards in</p>
+                    <p>on-course amenities.</p>
 
                     <span>Explore</span>
                 </div>
@@ -151,13 +165,12 @@
 
                 <div class="ddd-6">
                     <h1>Golf</h1>
-                    <p>
-                        we Commission the word's most renowned course<br>
-                        architects to design spectacular golf experiences on<br>
-                        challenging yet incredibly playable 18-hole courses. Our<br>
-                        trademark comfort stations also set new standards in<br>
-                        on-course amenities.<br>
-                    </p>
+
+                    <p>We Commission the word's most renowned course</p>
+                    <p>architects to design spectacular golf experiences on</p>
+                    <p>challenging yet incredibly playable 18-hole courses. Our</p>
+                    <p>trademark comfort stations also set new standards in</p>
+                    <p>on-course amenities.</p>
 
                     <span>Explore</span>
                 </div>
@@ -165,12 +178,12 @@
         </section>
 
         <section class="t-1">
+            <div class="t-3">
+                
+                <b>Our Worlds</b>
+                <button>Explore</button>
+            </div>
             <div class ="t-2">
-                <div class="t-3">
-                    
-                    <b>Our Worlds</b>
-                    <button>Explore</button>
-                </div>
             </div>
         </section>
 
