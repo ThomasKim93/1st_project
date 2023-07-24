@@ -1,0 +1,457 @@
+@import "_reset.scss";
+
+main{
+    .m-1{
+        width:100%; height:100vh;
+        overflow: hidden;
+        position:relative;
+        > figure{
+            width:100%; height:1600px;
+            margin:0;
+            background-color: black;
+            > img{
+                width: 100%; height:100%;
+                object-fit:cover;
+                filter: brightness(70%);
+                
+            }
+        }
+        .m-1-1{width:90%; height:100vh;
+                left:10%;
+                position:absolute;
+                margin:0 auto;
+            .m-2{
+                position:absolute;
+                z-index: 1;
+                display: inline-block;
+                top:40%;
+               
+                color:aliceblue;
+                font-size:80px;
+                overflow:hidden;
+                b{
+                    
+                     
+                }
+                }
+            > nav{
+                position:absolute;
+                color:white;
+                z-index:1;
+                bottom:5%;
+                width: 90%;
+                
+                @include flex(){
+                align-items:100%;};
+                .m-c-1{
+                    width: 100px; height:100px;
+                    .m-c-2{
+                        width:100%; height:100%;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        @include flex(space-evenly);
+                        transform: rotateZ(-90deg);
+                        overflow:hidden;
+                        margin:0 auto;
+                        div{ @include flex(space-evenly);
+                            width:50px;
+                            
+                            overflow:hidden;
+                            a:nth-of-type(1){
+                                animation: heroArrow 2s ease infinite;
+                                transform: translateX(100%); 
+                                
+                            }
+                            
+                            a:nth-of-type(2){
+                                animation: heroArrow 2s ease infinite;
+                                transform: translateX(150%); 
+                                 
+                            }
+                            > a:nth-of-type(1)::after{
+                                content:'line_start_arrow_notch';
+                                opacity: 80%;
+                                font-weight: 100;  
+                                font-size:50px;
+                                font-family: 'Material Symbols Outlined';
+                                
+                            }
+
+                            > a:nth-of-type(2)::after{
+                                content:'line_start_arrow_notch';
+                                opacity: 80%;
+                                font-weight: 100;  
+                                font-size:50px;
+                                font-family: 'Material Symbols Outlined';
+                                
+                            }
+
+                            @keyframes heroArrow{
+                                0% {
+                                    transform: translateX(50%);
+                                }
+                                50% {
+                                    transform: translateX(-50%);
+                                    
+                                }
+                                100% {
+                                    transform: translateX(-50%);
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 두번째 섹션 s-1*/
+main{
+    .s-1{
+        width:100%;
+        .s-2{
+            margin-top:200px;
+            @include flex(){
+                flex-direction: column;
+            };
+            .s-2-1{
+                @include flex(center){
+                    flex-direction: column;
+                };
+                text-align: center;
+                width:80%; margin: 0 auto;
+                font-size: calc(21.33333px + 1.13333vw);
+            }
+            .s-3{display: flex;
+                margin-top:200px;
+                > figure{
+                    max-height: 50rem;
+                    min-height: 42.5vw;
+                    order: 2;
+                    width: 50%;
+                    overflow: hidden;
+                    > img{
+                        width:100%; height:100%;
+                        object-fit: cover;
+                        
+                    }
+                }
+                .s-4{
+                    margin: 150px;
+                    > b{
+                        font-size:52px;
+                    }
+                    > p{
+
+                        font-size:18px;
+                        margin: 20px 0 20px 0 ; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 세번째 섹션 ss-1*/
+main{
+    .ss-1{
+        .ss-2{
+            .ss-3{
+                @include flex(space-around);
+                margin: 100px auto;
+                width: 1450px;
+                .ss-4{
+                    > b{
+                        font-size:43px;
+                    }
+                
+                }
+                .ss-5{
+                    input{display: none;}
+                    label{
+                        display:inline-block;
+                        background-color: white;
+                        width: 60px; height:60px;
+                        border:1px solid white;
+                        border-radius:50%;
+                        box-shadow: 5px 5px 5px gray;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        }
+                    label:hover{
+                        background-color: rgb(17, 17, 17);
+                        border:1px solid rgb(17, 17, 17);
+                    }
+
+                    label:nth-of-type(1){
+                        
+                        > span::after{
+                        content:'arrow_left_alt';
+                        font-weight: 100;
+                        font-size: 50px;
+                        font-family: 'Material Symbols Outlined';
+                        margin-left: 5px;
+                        }
+                    }
+                    label:nth-of-type(2){
+                        
+                        > span::after{
+                        content:'arrow_right_alt';
+                        font-weight: 100;
+                        font-size: 50px;
+                        font-family: 'Material Symbols Outlined';
+                        margin-left: 2px;
+                        }
+                    }
+
+                    label:hover:nth-of-type(1){
+                        color:white;
+                    }
+                    label:hover:nth-of-type(2){
+                        color:white;
+                    }
+                    
+                    }
+                }
+            }
+
+            .ss-6{
+                width:100%;
+                @include flex(flex-start);
+                
+                figure{
+                margin: 0;    
+                @include flex(center);
+
+                    a{margin-left:10px;
+                        width: 100%;
+                        height: 100%;
+                     
+                        section{
+                            
+                            width: 28vw;
+                            height: 800px;
+                            .ss-7{
+                                width:100%; height: 80%;
+                                
+                                @include flex(flex-end,center){
+                                    flex-direction: column;};
+                                figure{
+                                    margin: 0;
+                                    width: 100%;
+                                    overflow: hidden;
+                                    position:relative;
+                                    figcaption{
+                                        top:400px;
+                                        left:50px;
+                                        position:absolute;
+                                        color:azure;
+                                        z-index:4;
+                                        > p:nth-child(1){font-size:3rem;}
+                                        > p:nth-child(2){font-size:2rem;}
+                                    }
+                                    img{
+                                    width:100%; height:100%;
+                                    transition:0.5s;
+                                    }
+                                }
+                                figure:hover img{
+                                    transform: scale(1.05);
+                                    transform-origin: center center;
+                                }
+                            }        
+                        }
+                                       
+                    }
+                }
+            }
+        }
+    }
+
+
+main{
+    .v-1{
+        width:100%; height:100%;
+        background-color: #181f1e;
+        @include flex(center);
+        .v-2{
+            margin-top:200px;
+            width: 80%; height:100%;
+            
+            color:white;
+            .v-3{    
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+              
+                margin-bottom:100px;
+                
+                > h1{
+                    font-size:36px;
+                    margin-right: 400px;
+                }
+                .v-4{margin-bottom:100px;
+                
+                    .v-5{width: 50%;
+                        
+                        border: 1px solid white;
+                        padding:30px;
+                        @include flex(center);
+                        margin-top:100px;
+                        transition: .5s;
+                        left:0; bottom:0;
+                        animation: ani-line 1s forwards;
+                        div{ @include flex(center);
+                            overflow:hidden;
+                            
+                            width:100%; height:50px;
+                            button:nth-of-type(1){
+                                background-color: transparent;
+                                color: white;
+                                padding: 30px;
+                                border: transparent;
+                                cursor: pointer;
+                                opacity: 1;                       
+                                position: absolute;
+                                transform: translateY(0);
+                                transition-delay: .1s;
+                                transition-duration: .75s;
+                                transition-timing-function: cubic-bezier(.19,1,.22,1);
+                            }
+                            button:nth-of-type(2){
+                                background-color: transparent;
+                                color: white;
+                                padding: 30px;
+                                border: transparent;
+                                cursor: pointer;
+                                opacity: 1;                       
+                                position: absolute;
+                                bottom:0;
+                                transform: translateY(0);
+                                transition-delay: .1s;
+                                transition-duration: .75s;
+                                transition-timing-function: cubic-bezier(.19,1,.22,1);
+                            }
+                            button:hover{
+                                transform: translateY(-50%);                              
+                        
+                            }
+                        } 
+                    }
+
+                }
+                
+            }
+        }
+    }
+            > figure{
+                width:100%; height:100%;
+                position:relative;
+
+                > video{
+                    position:absoulte;
+                }
+                a{@include flex(flex-end);
+                    position: relative;
+                    bottom: 300px;
+                    right: 100px;
+                    width: 100%; height: 100%;
+                    
+                    > button{
+                        
+                        border:1px solid white;
+                        width: 100px; height:100px;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    > button::after{
+                        content:'arrow_right';
+                        font-size: 50px;
+                        font-family: 'Material Symbols Outlined';
+                    }
+                    .v-5-1{display: block;
+                        margin: 30px;
+                        > p{margin-top:10px;}
+                    }
+                }
+            }
+        }
+    
+
+
+
+main{
+    .t-1{width:100%;
+        .t-2{
+            .t-3{
+                @include flex(){
+                    flex-direction: column;
+                    width:100%; height: 100%;    
+                };
+                > figure{
+                    
+                    width:100%; height: 100%;
+                    margin-top:100px;
+                    z-index: 99;
+                    img{
+                        width:100%; height: 100%;
+                        object-fit:cover;
+                        
+                    }
+                }
+            }
+        }
+        .t-4{
+            @include flex(center);
+            margin-top:100px;
+            margin-bottom:100px;
+            > figure{
+                > img{
+                    width:720px; height:936px;
+                }
+            }
+            .t-5{
+                > figure{padding-top:50px;
+                    > img{
+                        width:719px; height:469px;
+                    }
+                }
+                .t-6{
+                    margin: 150px;
+                    > b{
+                        font-size:52px;
+                    }
+                    > p{
+                        font-size:18px;
+                        margin: 20px 0 20px 0 ; 
+                    }
+                }
+            }
+        }
+        .t-7{
+            width:100%; height: 400px;
+            background:url('../images/About_DLC_imgs/imgs-bottom.jpg') center / cover;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow: hidden;
+            
+            .t-8{ color:white;
+                height: 100%; width: 100%;
+                @include flex(center){flex-direction: column};
+                button{
+                    color:white;
+                    margin: 50px;
+                    padding: 20px 50px 20px 50px;
+                    border: 1px solid white;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+                b{font-size: 52px;}
+            }
+        }
+    }
+}
+

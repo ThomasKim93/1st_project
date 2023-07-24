@@ -1,0 +1,168 @@
+@import "_reset.scss";
+
+main{
+    .m-1{
+        > figure{
+            
+            width:100%; height:1600px;
+            margin:0;
+            background-color: black;
+            > img{
+                width: 100%; height:100%;
+                
+                object-fit:cover;
+                filter: brightness(70%);
+                
+            }
+        }
+        .m-1-1{width:80%;
+                position:relative;
+                margin:0 auto;
+            .m-2{
+                position:absolute;
+                z-index: 1;
+                display: inline-block;
+                top:300px;
+                margin: 400px 250px;
+                color:aliceblue;
+                font-size:80px;
+                overflow:hidden;
+                b{
+                    margin:0px;
+                    transform: translateY(200%);
+                    animation: txt 2s 0.5s cubic-bezier(.17,.67,.11,1.58) forwards;
+                }
+                p{
+                    margin:0px;
+                    transform: translateY(100%);
+                    animation: txt 2s 0.5s cubic-bezier(.17,.67,.11,1.58) forwards;
+                }
+                @keyframes txt{
+                    0%{transform: translateY(100%);}
+                    100%{transform: translateY(0%);} 
+
+                }
+                }
+            > nav{
+                position:absolute;
+                color:white;
+                z-index:1;
+                top: 1400px;
+                margin-left: 100px;
+                width: 90%;
+
+                @include flex();
+                .m-c-1{
+                    width: 100px; height:100px;
+                    .m-c-2{
+                        width:100%; height:100%;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        @include flex(space-evenly);
+                        transform: rotateZ(-90deg);
+                        overflow:hidden;
+                        margin:0 auto;
+                        div{ @include flex(space-evenly);
+                            width:50px;
+                            
+                            overflow:hidden;
+                            a:nth-of-type(1){
+                                animation: heroArrow 2s ease infinite;
+                                transform: translateX(100%); 
+                                
+                            }
+                            
+                            a:nth-of-type(2){
+                                animation: heroArrow 2s ease infinite;
+                                transform: translateX(150%); 
+                                 
+                            }
+                            > a:nth-of-type(1)::after{
+                                content:'line_start_arrow_notch';
+                                opacity: 80%;
+                                font-weight: 100;  
+                                font-size:50px;
+                                font-family: 'Material Symbols Outlined';
+                                
+                            }
+
+                            > a:nth-of-type(2)::after{
+                                content:'line_start_arrow_notch';
+                                opacity: 80%;
+                                font-weight: 100;  
+                                font-size:50px;
+                                font-family: 'Material Symbols Outlined';
+                                
+                            }
+
+                            @keyframes heroArrow{
+                                0% {
+                                    transform: translateX(50%);
+                                }
+                                50% {
+                                    transform: translateX(-50%);
+                                    
+                                }
+                                100% {
+                                    transform: translateX(-50%);
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main{
+    .pr-1{
+        background-color: #f3f3f3;
+        @include flex(center)
+            {flex-direction: column;}
+        .pr-1-1{
+            display:left;
+
+            margin-top:100px;
+            left:0;
+            p{
+               font-size:45px;
+           }
+        }
+        .pr-2{
+            margin-right:500px;
+            margin-bottom:200px;
+            padding-top:100px;
+            padding-left: 50px;
+            @include flex();
+            position:relative;
+            .pr-3{
+                .pr-4{
+                    position:relative;
+                    z-index: 2;
+                }
+            }
+            .pr-5{
+                background-color: #fff;
+                position:absolute;
+                width:40%; height:50%;
+                left:900px;
+                z-index: 3;
+                @include flex(center, left){
+                    flex-direction: column;    
+                };
+                h1{padding-left: 40px;}
+                p{padding: 40px 40px;}
+                span{
+                    width:30%; height:10%;
+                    border:1px solid gray;
+                    margin-left: 40px;
+                    @include flex(center);
+                }
+            }
+        }
+    }
+}

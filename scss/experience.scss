@@ -1,0 +1,283 @@
+@import "_reset";
+
+main{
+    .m-1{width:100%; height:100vh;
+        overflow:hidden;
+        position:relative;
+        >figure{
+        
+        width:100%; height:100%;
+        margin:0;
+        /* position: relative; */
+            > video{
+            /* position:absolute; */
+            object-fit:cover;
+            }
+        }
+        .m-1-1{width:80%; height:100vh;
+            left:10%;
+            position:absolute;
+            margin:0 auto;
+            .m-2{
+                position:absolute;
+                z-index: 1;
+                display: inline-block;
+                top:40%;
+                
+                color:aliceblue;
+                font-size:80px;
+                overflow:hidden;
+                b{
+            
+                }
+                p{
+                }
+            }
+            > nav{
+                position:absolute;
+                color:white;
+                z-index:1;
+                bottom:5%;
+                width: 90%;
+
+                @include flex(){
+                align-items:100%;};
+                .m-c-1{
+                    width: 100px; height:100px;
+                    .m-c-2{
+                        width:100%; height:100%;
+                        border: 1px solid white;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        @include flex(space-evenly);
+                        transform: rotateZ(-90deg);
+
+                        > a::after{
+                            content:'line_start_arrow_notch';
+                            opacity: 80%;
+                            font-weight: 100;  
+                            font-size:50px;
+                            font-family: 'Material Symbols Outlined';
+                            transform: translateX(0);
+                            animation: arrow 2s ease infinite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 두번째 섹션 s-1*/
+main{
+    .s-1{
+        width:100%; margin:60px;
+        .s-2{
+            margin-top:200px;
+            @include flex(center){
+                flex-direction: column;
+            };
+            .s-2-1{
+                @include flex(center)
+                {flex-direction: column;};
+                width:80%; margin:0 auto;
+                font-size: calc(21.33333px + 1.13333vw);
+            }
+            .s-3{display: flex;
+                margin-top:200px;
+                > figure{
+                    max-height: 50rem;
+                    min-height: 42.5vw;
+                    order: 2;
+                    width: 50%;
+                    overflow: hidden;
+                    > img{
+                        width:100%; height:100%;
+                        object-fit: cover;
+                        
+                    }
+                }
+                .s-4{
+                    margin: 150px;
+                    > b{
+                        font-size:52px;
+                    }
+                    > p{
+                        font-size:18px;
+                        margin: 20px 0 20px 0 ; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+main{
+    .d-1{
+        background-color: #f3f3f3;
+        @include flex(center);
+        
+        .d-2{
+            margin-right:500px;
+            padding-top:200px;
+            padding-left: 50px;
+            @include flex();
+            position:relative;
+            .d-3{
+                .d-4{
+                    position:relative;
+                    z-index: 2;
+                }
+                .d-5{
+                    background-color: rgb(146, 146, 146);
+                    position:absolute;
+                    width:900px; height: 200px;
+                    bottom:0; right:0;
+                    z-index: 1;
+
+                }
+            }
+            .d-6{
+                background-color: #fff;
+                position:absolute;
+                width:40%; height:50%;
+                left:900px;
+                z-index: 3;
+                @include flex(center, left){
+                    flex-direction: column;    
+                };
+                h1{padding-left: 40px; margin-bottom:30px;}
+                p{padding: 10px 0 10px 40px;}
+                span{
+                    width:30%; height:10%;
+                    border:1px solid gray;
+                    margin: 30px 0 0 40px;
+                    @include flex(center);
+                }
+            }
+        }
+    }
+}
+
+main{
+    .dd-1{
+        background-color: #f3f3f3;
+        @include flex(center);
+        .dd-2{
+            margin-left:500px;
+            padding-top:100px;
+            padding-left: 50px;
+            @include flex();
+            position:relative;
+            .dd-3{
+                .dd-4{
+                    position:relative;
+                    z-index: 2;
+                }
+                .dd-5{
+                    background-color: rgb(146, 146, 146);
+                    position:absolute;
+                    width:900px; height: 200px;
+                    bottom:0; left:10;
+                    z-index: 1;
+
+                }
+            }
+            .dd-6{
+                background-color: #fff;
+                position:absolute;
+                width:40%; height:50%;
+                right:900px;
+                z-index: 3;
+                @include flex(center, left){
+                    flex-direction: column;    
+                };
+                h1{padding-left: 40px; margin-bottom:30px;}
+                p{padding: 10px 0 10px 40px;}
+                span{
+                    width:30%; height:10%;
+                    border:1px solid gray;
+                    margin: 30px 0 0 40px;
+                    @include flex(center);
+                }
+            }
+        }
+    }
+}
+
+
+main{
+    .ddd-1{
+        background-color: #f3f3f3;
+        @include flex(center);
+        .ddd-2{
+            margin-bottom:200px;
+            margin-right:500px;
+            padding-top:100px;
+            padding-left: 50px;
+            @include flex();
+            position:relative;
+            .ddd-3{
+                .ddd-4{
+                    position:relative;
+                    z-index: 2;
+                }
+                .ddd-5{
+                    background-color: rgb(146, 146, 146);
+                    position:absolute;
+                    width:900px; height: 200px;
+                    bottom:0; right:0;
+                    z-index: 1;
+
+                }
+            }
+            .ddd-6{
+                background-color: #fff;
+                position:absolute;
+                width:40%; height:50%;
+                left:900px;
+                z-index: 3;
+                @include flex(center, left){
+                    flex-direction: column;    
+                };
+                h1{padding-left: 40px; margin-bottom:30px;}
+                p{padding: 10px 0 10px 40px;}
+                span{
+                    width:30%; height:10%;
+                    border:1px solid gray;
+                    margin: 30px 0 0 40px;
+                    @include flex(center);
+                }
+            }
+        }
+    }
+}
+main{
+    .t-1{position:relative;
+        .t-3{ color:white; 
+            height: 100%; width: 100%;
+            position:absolute;
+            z-index:3;
+            @include flex(center){flex-direction: column};
+            button{
+                color:white;
+                margin: 50px;
+                padding: 20px 50px 20px 50px;
+                border: 1px solid white;
+                background-color: transparent;
+            }
+            b{font-size: 52px;}
+        }
+        .t-2{
+            width:100%; height: 400px;
+            background:url('../images/experience_imgs/Barbuda-ocean-club-2_5dabbd1a34149dcaed83515ff1526a0f.jpg') center / cover;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            overflow: hidden;
+            filter: brightness(70%);
+
+        }
+    }
+}
+
+            
